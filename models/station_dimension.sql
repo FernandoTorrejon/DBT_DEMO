@@ -4,7 +4,7 @@ WITH BIKE as (
     START_STATION_NAME,
     START_LAT,
     START_LNG
-    from {{ source('demo', 'bike') }}
+    from {{ ref('stage_bike') }}
 )
 
 select *

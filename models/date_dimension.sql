@@ -6,7 +6,7 @@ WITH CTE AS (
     {{get_season('STARTED_AT')}} as STATION_OF_YEAR -- Invoke a macro function
     --  {{function1('STARTED_AT')}} as TIME
     
-    from {{ source('demo', 'bike') }}
+    from {{ ref('stage_bike') }}
 )
 
 select *

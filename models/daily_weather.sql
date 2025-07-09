@@ -9,7 +9,6 @@ WITH daily_weather as (
     clouds
 
     from {{ source('demo', 'weather') }}
-    limit 10
 ),
 
 daily_weather_aggregate as (
