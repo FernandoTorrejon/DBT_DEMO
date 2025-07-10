@@ -1,5 +1,6 @@
 WITH BIKE AS (
     SELECT 
+
     	RIDE_ID,
     	STARTED_AT,
     	ENDED_AT,
@@ -12,6 +13,7 @@ WITH BIKE AS (
     	END_LAT,
     	END_LNG,
     	MEMBER_CSUAL
+        
     from {{ source('demo', 'bike') }}
 )
 

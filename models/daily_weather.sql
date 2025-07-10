@@ -1,12 +1,12 @@
 WITH daily_weather as (
     select 
 
-    date(time) as daily_weather,
-    weather,
-    temp,
-    pressure, 
-    humidity,
-    clouds
+        date(time) as daily_weather,
+        weather,
+        temp,
+        pressure, 
+        humidity,
+        clouds
 
     from {{ source('demo', 'weather') }}
 ),
