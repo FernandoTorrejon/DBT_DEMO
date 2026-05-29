@@ -1,10 +1,13 @@
 -- Take preference over properties.yml and dbt_project.yml
 
+{#
 {{
    config(
-          materialized = 'table'
+        materialized = 'table',
+        schema = 'gold'
    )
 }}
+#}
 
 
 SELECT

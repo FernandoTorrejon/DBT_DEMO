@@ -38,6 +38,18 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   dbt_databricks_project:
     # Applies to all files under models/example/
-    +materialized: table
+    # +materialized: table
     #gold:
     #    +materialized: view
+
+    # Stablish different schema for different layers (instead of using preconfigured schema dbt_ffernandolopez)
+    bronze:
+     +materialized: table
+     +schema: bronze
+    silver:
+     +materialized: table
+     +schema: silver
+    gold:
+     +materialized: table
+     +schema: gold
+
