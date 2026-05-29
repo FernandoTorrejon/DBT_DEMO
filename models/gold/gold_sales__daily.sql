@@ -1,3 +1,12 @@
+-- Take preference over properties.yml and dbt_project.yml
+/*
+{{
+   config(
+          materialized = 'view'
+   )
+}}
+*/
+
 SELECT
     order.order_date,
     product.product_name,

@@ -39,3 +39,5 @@ models:
   dbt_databricks_project:
     # Applies to all files under models/example/
     +materialized: table
+    gold:
+        +materialized: view

@@ -1,0 +1,7 @@
+#version: 2
+
+# Take preference over dbt_project.yml
+#models:
+# - name: gold_sales__daily
+#   config: 
+#     materialized: table
