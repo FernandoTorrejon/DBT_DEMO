@@ -1,11 +1,11 @@
 -- Take preference over properties.yml and dbt_project.yml
-/*
+
 {{
    config(
-          materialized = 'view'
+          materialized = 'table'
    )
 }}
-*/
+
 
 SELECT
     order.order_date,
