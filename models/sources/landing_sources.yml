@@ -5,6 +5,7 @@ sources:
     database: dbt_project_catalog  
     schema: landing  
     tables:
+      # - name: orders_incremental
       - name: orders
         columns:
           - name: id
