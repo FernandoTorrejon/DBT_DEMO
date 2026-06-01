@@ -1,3 +1,4 @@
+-- Add a tag
 {{
     config(
         tags='contains_pii'
