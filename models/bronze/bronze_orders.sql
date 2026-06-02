@@ -31,7 +31,7 @@
 SELECT 
 *
 FROM {{ source('landing', 'orders') }}
--- FROM {{ source('landing', 'orders_incremental') }}
+-- FROM {# {{ source('landing', 'orders_incremental') }} #}
 
 {# 
 
